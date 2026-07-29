@@ -1,0 +1,5 @@
+:root {
+    --pico-font-family-old-style: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    --pico-font-family: var(--pico-font-family-old-style);
+    --pico-font-weight: 400;
+}

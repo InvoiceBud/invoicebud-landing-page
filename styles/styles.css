@@ -1,0 +1,339 @@
+/* Shared */
+section {
+    padding-block: 4.5rem;
+}
+
+section>header {
+    text-align: center;
+    margin-bottom: 2.75rem;
+}
+
+section>header h2 {
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+section>header p {
+    margin: 0;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+/* Hero section  */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    max-width: 36rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+}
+
+.hero .actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Problem-Solution section */
+.problem-solution {
+    padding-block: 4rem;
+}
+
+.problem-solution header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.problem-solution header h2 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.problem-solution header h2 span {
+    opacity: 0.45;
+    font-weight: 400;
+}
+
+.problem-solution .grid {
+    gap: 1.5rem;
+}
+
+.problem-solution article {
+    padding: 1.75rem;
+    height: 100%;
+}
+
+.problem-solution article header {
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.problem-solution article strong {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+    margin-bottom: 0.35rem;
+}
+
+.problem-solution article h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+/* Benefit section */
+.benefits .grid {
+    gap: 1.25rem;
+}
+
+.benefits article {
+    padding: 1.75rem 1.5rem;
+    height: 100%;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.benefits article:hover {
+    transform: translateY(-3px);
+}
+
+.benefits .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.75rem;
+    background: var(--pico-primary-background);
+    color: var(--pico-primary-inverse);
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.benefits h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.benefits p {
+    margin: 0;
+    opacity: 0.8;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+/* Features section */
+.feature-list .grid {
+    gap: 1rem;
+}
+
+.feature-list article {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.35rem;
+    margin: 0;
+    height: 100%;
+}
+
+.feature-list .check {
+    flex-shrink: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--pico-primary-background);
+    color: var(--pico-primary-inverse);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.15rem;
+}
+
+.feature-list p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* How it works section */
+.steps .grid {
+    gap: 1.5rem;
+    counter-reset: step;
+}
+
+.steps article {
+    position: relative;
+    padding: 2rem 1.75rem 1.75rem;
+    height: 100%;
+    text-align: center;
+}
+
+.steps .step-number {
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 1.25rem;
+    border-radius: 50%;
+    background: var(--pico-primary-background);
+    color: var(--pico-primary-inverse);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.steps h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.steps p {
+    margin: 0;
+    opacity: 0.75;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* CTA Banner */
+.cta {
+    text-align: center;
+    padding-block: 5rem;
+}
+
+.cta-inner {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding: 3rem 2rem;
+    border-radius: var(--pico-border-radius);
+    background: var(--pico-card-background-color);
+    border: 1px solid var(--pico-muted-border-color);
+}
+
+.cta h2 {
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.cta p {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+.cta .actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FAQ */
+.faq details {
+    margin-bottom: 0.75rem;
+    border-radius: var(--pico-border-radius);
+}
+
+.faq details summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq details p {
+    margin: 0.75rem 0 0;
+    opacity: 0.85;
+    line-height: 1.55;
+}
+
+/* Footer */
+footer {
+    padding-block: 3.5rem 2.5rem;
+    border-top: 1px solid var(--pico-muted-border-color);
+    margin-top: 2rem;
+}
+
+footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+footer h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+footer .brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .brand-desc {
+    opacity: 0.7;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 16rem;
+}
+
+footer .copyright {
+    text-align: center;
+    opacity: 0.55;
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--pico-muted-border-color);
+}
+
+@media (max-width: 768px) {
+    footer .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
