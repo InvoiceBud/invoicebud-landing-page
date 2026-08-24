@@ -20,6 +20,135 @@ section>header p {
     font-size: 1.1rem;
 }
 
+/* ===== Navigation ===== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: color-mix(in srgb, var(--pico-background-color) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--pico-muted-border-color);
+    padding-block: 0.85rem;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo:hover {
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.nav-actions a {
+    text-decoration: none;
+}
+
+.nav-actions .login {
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.85;
+    padding: 0.4rem 0.75rem;
+}
+
+.nav-actions .login:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.nav-actions button,
+.nav-actions .button {
+    margin: 0;
+    padding: 0.45rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.35rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links,
+    .nav-actions {
+        display: none;
+    }
+
+    .site-header.menu-open .nav-links,
+    .site-header.menu-open .nav-actions {
+        display: flex;
+    }
+
+    .site-header.menu-open .container {
+        flex-wrap: wrap;
+    }
+
+    .site-header.menu-open .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--pico-muted-border-color);
+        margin-top: 0.75rem;
+    }
+
+    .site-header.menu-open .nav-actions {
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
+    }
+}
+
 /* Hero section  */
 .hero {
     min-height: 80vh;
@@ -247,20 +376,63 @@ section>header p {
 }
 
 /* FAQ */
+.faq {
+    max-width: 42rem;
+    margin-inline: auto;
+}
+
 .faq details {
-    margin-bottom: 0.75rem;
-    border-radius: var(--pico-border-radius);
+    background: var(--pico-card-background-color);
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 0.85rem;
+    margin-bottom: 0.85rem;
+    padding: 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq details:hover {
+    border-color: var(--pico-primary-border);
+}
+
+.faq details[open] {
+    border-color: var(--pico-primary-border);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
 }
 
 .faq details summary {
     font-weight: 600;
+    font-size: 1.05rem;
+    padding: 1.15rem 1.35rem;
     cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faq details summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq details summary::after {
+    font-size: 1.35rem;
+    font-weight: 400;
+    opacity: 0.45;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    flex-shrink: 0;
+}
+
+.faq details[open] summary::after {
+    opacity: 0.7;
 }
 
 .faq details p {
-    margin: 0.75rem 0 0;
-    opacity: 0.85;
-    line-height: 1.55;
+    margin: 0;
+    padding: 0 1.35rem 1.25rem;
+    opacity: 0.8;
+    line-height: 1.6;
+    font-size: 0.98rem;
 }
 
 /* Footer */

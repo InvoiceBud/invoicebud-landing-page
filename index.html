@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <!-- Alphine CSS file (CDN link) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css">
     <!-- Custom CSS files starts here -->
     <link rel="stylesheet" href="/styles/root.css">
     <link rel="stylesheet" href="/styles/styles.css">
     <!-- Custom CSS files ends here -->
-    <title>Invoicebud - Create invoice simple & elegant for freelancer</title>
+    <title>BillGig - Create invoice simple & elegant for freelancer</title>
     <!-- Main JS script -->
     <script src="/scripts/main.js" defer></script>
     <!-- Alphine Script -->
@@ -18,6 +18,31 @@
 </head>
 
 <body>
+    <!-- ===== Navigation ===== -->
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <a href="#" class="logo">BillGig</a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon">☾</span>
+                    <span class="icon-sun">☀</span>
+                </button> -->
+
+                <a href="https://dash.billgig.app" class="login">Log in</a>
+                <button onclick="">Get started</button>
+            </div>
+        </div>
+    </header>
+
     <main class="container">
         <!-- Hero section -->
         <section class="hero">
@@ -182,7 +207,7 @@
                 <p>Everything you need to know before getting started</p>
             </header>
 
-            <details open>
+            <details open> 
                 <summary>Is Businvoice free to use?</summary>
                 <p>Yes. You can create and send professional invoices at no cost. Optional paid plans unlock advanced
                     branding and higher volume limits if you need them later.</p>
@@ -264,4 +289,5 @@
         </div>
     </footer>
 </body>
+
 </html>
