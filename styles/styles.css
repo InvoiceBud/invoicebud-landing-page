@@ -60,6 +60,10 @@ section>header p {
     list-style: none;
 }
 
+.nav-links li {
+    list-style-type: none;
+}
+
 .nav-links a {
     text-decoration: none;
     font-size: 0.95rem;
@@ -466,6 +470,7 @@ footer ul {
 
 footer li {
     margin-bottom: 0.5rem;
+    list-style-type: none;
 }
 
 footer a {
