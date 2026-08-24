@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="/styles/root.css">
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/media.css">
 
     <script src="/data/data.js"></script>
     <script defer src="/scripts/main.js"></script>
@@ -28,7 +29,7 @@
     <!-- ===== Navigation ===== -->
     <header class="site-header" id="site-header">
         <div class="container">
-            <a href="#" class="logo">BillGig</a>
+            <a href="" class="logo">BillGig</a>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
 
@@ -115,7 +116,7 @@
         </section>
 
         <!-- Features -->
-        <section class="feature-list">
+        <!-- <section class="feature-list" id="features">
             <header>
                 <h2>Features</h2>
                 <p>Everything you need to get paid</p>
@@ -129,32 +130,193 @@
                     </article>
                 </template>
             </div>
+        </section> -->
+
+        <section class="feature-list" id="features">
+            <header>
+                <h2>Features</h2>
+                <p>Everything you need to get paid</p>
+            </header>
+
+            <div class="features-list">
+                <!-- Feature 1: Image LEFT -->
+                <article class="feature feature--left">
+                    <div class="feature-visual">
+                        <div class="illustration">
+                            <!-- Replace with your real illustration -->
+                            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="30" y="25" width="180" height="130" rx="16"
+                                    fill="var(--pico-primary-background)" opacity="0.1" />
+                                <rect x="55" y="50" width="130" height="12" rx="6" fill="var(--pico-primary)"
+                                    opacity="0.7" />
+                                <rect x="55" y="75" width="90" height="8" rx="4" fill="var(--pico-primary)"
+                                    opacity="0.35" />
+                                <rect x="55" y="95" width="110" height="8" rx="4" fill="var(--pico-primary)"
+                                    opacity="0.25" />
+                                <rect x="55" y="115" width="70" height="8" rx="4" fill="var(--pico-primary)"
+                                    opacity="0.25" />
+                                <circle cx="175" cy="130" r="18" fill="var(--pico-primary-background)" />
+                                <path d="M168 130h14M175 123v14" stroke="var(--pico-primary-inverse)" stroke-width="3"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="feature-content">
+                        <div class="check">✓</div>
+                        <div>
+                            <h3>Professional invoices in seconds</h3>
+                            <p>Create clean, branded invoices with automatic calculations, taxes, and discounts.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Feature 2: Image RIGHT -->
+                <article class="feature feature--right">
+                    <div class="feature-visual">
+                        <div class="illustration">
+                            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="40" y="30" width="160" height="120" rx="14"
+                                    fill="var(--pico-primary-background)" opacity="0.1" />
+                                <circle cx="120" cy="75" r="28" fill="var(--pico-primary-background)" opacity="0.85" />
+                                <path d="M105 90c0-12 10-22 22-22s22 10 22 22" stroke="var(--pico-primary)"
+                                    stroke-width="5" stroke-linecap="round" />
+                                <rect x="70" y="120" width="100" height="10" rx="5" fill="var(--pico-primary)"
+                                    opacity="0.3" />
+                                <rect x="85" y="140" width="70" height="8" rx="4" fill="var(--pico-primary)"
+                                    opacity="0.2" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="feature-content">
+                        <div class="check">✓</div>
+                        <div>
+                            <h3>Your brand, your way</h3>
+                            <p>Add your logo, colors, and business details once. Every invoice looks professional.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Feature 3: Image LEFT -->
+                <article class="feature feature--left">
+                    <div class="feature-visual">
+                        <div class="illustration">
+                            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="35" y="35" width="170" height="110" rx="14"
+                                    fill="var(--pico-primary-background)" opacity="0.1" />
+                                <path d="M55 55l50 38 50-38" stroke="var(--pico-primary)" stroke-width="5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M55 55h100v70H55z" stroke="var(--pico-primary)" stroke-width="5"
+                                    opacity="0.5" />
+                                <circle cx="120" cy="140" r="16" fill="var(--pico-primary-background)" />
+                                <path d="M120 132v16M112 140l8 8 8-8" stroke="var(--pico-primary-inverse)"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="feature-content">
+                        <div class="check">✓</div>
+                        <div>
+                            <h3>Send or download instantly</h3>
+                            <p>Email the invoice in one click or download a polished PDF. Get paid faster.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- How it Works – 3 Steps -->
-        <section class="steps">
+        <section class="steps" id="how-it-works">
             <header>
                 <h2>How it Works</h2>
-                <p>Three simple steps</p>
+                <p>Three simple steps to get paid faster</p>
             </header>
 
-            <div class="grid">
-                <article>
+            <div class="steps-list">
+                <!-- Step 1: Illustration LEFT -->
+                <article class="step step--left">
+                    <div class="step-visual">
+                        <div class="illustration">
+                            <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="40" y="30" width="120" height="100" rx="12"
+                                    fill="var(--pico-primary-background)" opacity="0.12" />
+                                <circle cx="100" cy="70" r="22" fill="var(--pico-primary-background)" opacity="0.9" />
+                                <path d="M70 110c0-16.5 13.5-30 30-30s30 13.5 30 30" stroke="var(--pico-primary)"
+                                    stroke-width="6" stroke-linecap="round" />
+                                <rect x="55" y="125" width="90" height="8" rx="4" fill="var(--pico-primary)"
+                                    opacity="0.35" />
+                                <rect x="70" y="140" width="60" height="6" rx="3" fill="var(--pico-primary)"
+                                    opacity="0.2" />
+                            </svg>
+                        </div>
+                    </div>
+
                     <div class="step-number">1</div>
-                    <h3>Set up your business profile</h3>
-                    <p>Add your details once — logo, address. You&apos;re ready to go.</p>
+
+                    <div class="step-content">
+                        <h3>Set up your business profile</h3>
+                        <p>Add your details once — logo, address, and payment info. You’re ready to go.</p>
+                    </div>
                 </article>
 
-                <article>
+                <!-- Step 2: Illustration RIGHT -->
+                <article class="step step--right">
+                    <div class="step-visual">
+                        <div class="illustration">
+                            <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="50" y="20" width="100" height="120" rx="10"
+                                    fill="var(--pico-primary-background)" opacity="0.12" />
+                                <rect x="65" y="40" width="70" height="8" rx="4" fill="var(--pico-primary)"
+                                    opacity="0.7" />
+                                <rect x="65" y="58" width="50" height="6" rx="3" fill="var(--pico-primary)"
+                                    opacity="0.35" />
+                                <rect x="65" y="80" width="70" height="6" rx="3" fill="var(--pico-primary)"
+                                    opacity="0.25" />
+                                <rect x="65" y="94" width="55" height="6" rx="3" fill="var(--pico-primary)"
+                                    opacity="0.25" />
+                                <rect x="65" y="108" width="40" height="6" rx="3" fill="var(--pico-primary)"
+                                    opacity="0.25" />
+                                <circle cx="145" cy="115" r="18" fill="var(--pico-primary-background)" />
+                                <path d="M138 115h14M145 108v14" stroke="var(--pico-primary-inverse)" stroke-width="3"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+
                     <div class="step-number">2</div>
-                    <h3>Create an invoice</h3>
-                    <p>Add client, items, and amounts. Calculations happen automatically.</p>
+
+                    <div class="step-content">
+                        <h3>Create an invoice</h3>
+                        <p>Add client, items, and amounts. Calculations happen automatically.</p>
+                    </div>
                 </article>
 
-                <article>
+                <!-- Step 3: Illustration LEFT -->
+                <article class="step step--left">
+                    <div class="step-visual">
+                        <div class="illustration">
+                            <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="45" y="35" width="110" height="75" rx="12"
+                                    fill="var(--pico-primary-background)" opacity="0.12" />
+                                <path d="M55 50l45 32 45-32" stroke="var(--pico-primary)" stroke-width="5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M55 50h90v50H55z" stroke="var(--pico-primary)" stroke-width="5"
+                                    stroke-linejoin="round" opacity="0.6" />
+                                <circle cx="100" cy="125" r="16" fill="var(--pico-primary-background)" />
+                                <path d="M100 117v16M92 125l8 8 8-8" stroke="var(--pico-primary-inverse)"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
                     <div class="step-number">3</div>
-                    <h3>Send or download</h3>
-                    <p>Email it in one click or download the PDF — and get paid.</p>
+
+                    <div class="step-content">
+                        <h3>Send or download</h3>
+                        <p>Email it in one click or download the PDF — and get paid.</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -172,7 +334,7 @@
         </section>
 
         <!-- FAQ -->
-        <section class="faq" x-data="data">
+        <section class="faq" id="faq" x-data="data">
             <header>
                 <h2>Frequently asked questions</h2>
                 <p>Everything you need to know before getting started</p>
