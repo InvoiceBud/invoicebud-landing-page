@@ -273,7 +273,7 @@ section>header p {
     line-height: 1.55;
 }
 
-/* Features section */
+/* ========== Features ========== */
 .feature-list {
     max-width: 960px;
     margin-inline: auto;
@@ -296,14 +296,12 @@ section>header p {
     font-size: 1.05rem;
 }
 
-/* ===== Vertical list ===== */
 .features-list {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
-/* ===== Single feature row ===== */
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -311,7 +309,6 @@ section>header p {
     align-items: center;
 }
 
-/* LEFT version (image left, text right) */
 .feature--left .feature-visual {
     order: 1;
     justify-self: end;
@@ -322,7 +319,6 @@ section>header p {
     text-align: left;
 }
 
-/* RIGHT version (image right, text left) */
 .feature--right .feature-visual {
     order: 2;
     justify-self: start;
@@ -333,7 +329,6 @@ section>header p {
     text-align: right;
 }
 
-/* Illustration */
 .feature-visual {
     max-width: 280px;
 }
@@ -362,7 +357,6 @@ section>header p {
     padding: 1rem;
 }
 
-/* Content side */
 .feature-content {
     display: flex;
     align-items: flex-start;
@@ -372,7 +366,6 @@ section>header p {
 
 .feature--right .feature-content {
     flex-direction: row-reverse;
-    /* checkmark stays near the text */
     margin-left: auto;
 }
 
@@ -405,10 +398,8 @@ section>header p {
     line-height: 1.55;
 }
 
-/* How it works section */
+/* ========== How it Works ========== */
 .steps {
-    --step-size: 2.85rem;
-    --connector-color: color-mix(in srgb, var(--pico-primary) 32%, transparent);
     max-width: 960px;
     margin-inline: auto;
 }
@@ -430,7 +421,6 @@ section>header p {
     font-size: 1.05rem;
 }
 
-/* ===== Timeline container ===== */
 .steps-list {
     position: relative;
     display: flex;
@@ -438,7 +428,6 @@ section>header p {
     gap: 5rem;
 }
 
-/* Vertical connecting line (center) */
 .steps-list::before {
     content: "";
     position: absolute;
@@ -456,7 +445,6 @@ section>header p {
     z-index: 0;
 }
 
-/* ===== Individual step ===== */
 .step {
     display: grid;
     grid-template-columns: 1fr var(--step-size) 1fr;
@@ -464,9 +452,10 @@ section>header p {
     align-items: center;
     position: relative;
     z-index: 1;
+    background: none;
+    margin: 2rem 0;
 }
 
-/* Number stays perfectly centered on the line */
 .step-number {
     width: var(--step-size);
     height: var(--step-size);
@@ -491,7 +480,6 @@ section>header p {
         0 6px 16px color-mix(in srgb, var(--pico-primary) 22%, transparent);
 }
 
-/* ===== LEFT version (illustration left, text right) ===== */
 .step--left .step-visual {
     justify-self: end;
 }
@@ -500,7 +488,6 @@ section>header p {
     text-align: left;
 }
 
-/* ===== RIGHT version (illustration right, text left) ===== */
 .step--right .step-visual {
     order: 3;
     justify-self: start;
@@ -515,7 +502,6 @@ section>header p {
     order: 2;
 }
 
-/* Visual (illustration) */
 .step-visual {
     max-width: 220px;
 }
@@ -543,7 +529,6 @@ section>header p {
     padding: 0.75rem;
 }
 
-/* Text */
 .step-content h3 {
     margin: 0 0 0.55rem;
     font-size: 1.35rem;
