@@ -1,5 +1,5 @@
 document.addEventListener("alpine:init", () => {
-  let { benefits, features, faqs } = window.data;
+  let { benefits, features, faqs, how_it_works } = window.data;
 
   /***** Custom Data *****/
   Alpine.data("auth", () => ({
@@ -10,6 +10,7 @@ document.addEventListener("alpine:init", () => {
   Alpine.data("data", () => ({
     benefits: benefits,
     features: features,
+    howItWorks: how_it_works,
     faqs: faqs,
   }));
 

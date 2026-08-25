@@ -24,27 +24,67 @@ window.data = {
   features: [
     {
       id: 1,
-      description: "Instant PDF invoices",
+      title: "Professional invoices in seconds",
+      description: "Creat clean, branded invoices with automatic calculations",
+      illustration: "assets/svg/professional_invoice.svg",
+      alt: "professional invoices in seconds",
     },
     {
       id: 2,
-      description: "Client management",
+      title: "Client management",
+      description:
+        "Add and manage clients with their contact details, so you never have to re-enter information.",
+      illustration: "assets/svg/team_management.svg",
+      alt: "client management",
     },
     {
       id: 3,
-      description: "Automatic tax &amp; total calculations",
+      title: "Your brand, your way",
+      description:
+        "Add your logo and business details once. Every invoice looks professional.",
+      illustration: "assets/svg/brand_design.svg",
+      alt: "your brand, your way",
     },
     {
       id: 4,
-      description: "Custom branding (logo)",
+      title: "Payment status tracking",
+      description:
+        "Know exactly which invoices are paid and which ones still need follow-up",
+      illustration: "assets/svg/progress_tracking.svg",
+      alt: "payment status tracking",
     },
     {
       id: 5,
-      description: "Payment status tracking",
+      title: "Send or download instantly",
+      description:
+        "Email the invoice in one click or download a polished PDF. Get paid faster.",
+      illustration: "assets/svg/document_sent.svg",
+      alt: "send or download instantly",
+    },
+  ],
+  how_it_works: [
+    {
+      id: 1,
+      title: "Set up your business profile",
+      subtext:
+        "Add your details once — logo, address, and payment info. You&apos;re ready to go.",
+      illustration: "assets/svg/user_profile.svg",
+      alt: "set up your business profile",
     },
     {
-      id: 6,
-      description: "Send invoices by email in one click",
+      id: 2,
+      title: "Create an invoice",
+      subtext:
+        "Add client, items, and amounts. Calculations happen automatically.",
+      illustration: "assets/svg/add_document.svg",
+      alt: "create an invoice",
+    },
+    {
+      id: 3,
+      title: "Send or download",
+      subtext: "Email it in one click or download the PDF — and get paid.",
+      illustration: "assets/svg/mail_sent.svg",
+      alt: "send or download",
     },
   ],
   faqs: [

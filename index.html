@@ -116,22 +116,7 @@
             </div>
         </section>
 
-        <!-- Features -->
-        <!-- <section class="feature-list" id="features">
-            <header>
-                <h2>Features</h2>
-                <p>Everything you need to get paid</p>
-            </header>
-
-            <div class="grid" x-data="data">
-                <template x-for="x in features">
-                    <article :key="x.id">
-                        <div class="check">✓</div>
-                        <p x-html="x.description"></p>
-                    </article>
-                </template>
-            </div>
-        </section> -->
+        <!-- ========== Features ========== -->
 
         <section class="feature-list" id="features">
             <header>
@@ -139,107 +124,51 @@
                 <p>Everything you need to get paid</p>
             </header>
 
-            <div class="features-list">
-                <article class="feature feature--left">
-                    <div class="feature-visual">
-                        <div class="illustration">
-                            <img src="assets/svg/professional_invoice.svg" alt="professional invoices in seconds" />
+            <div class="features-list" x-data="data">
+                <template x-for="x in features">
+                    <article :key="x.id" :class="x.id % 2 == 0 ? 'feature--right' : 'feature--left'" class="feature">
+                        <div class="feature-visual">
+                            <div class="illustration">
+                                <img :src="x.illustration" :alt="x.alt" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="feature-content">
-                        <div class="check">✓</div>
-                        <div>
-                            <h3>Professional invoices in seconds</h3>
-                            <p>Create clean, branded invoices with automatic calculations, taxes, and discounts.</p>
+                        <div class="feature-content">
+                            <div class="check">✓</div>
+                            <div>
+                                <h3 x-text="x.title"></h3>
+                                <p x-text="x.description"></p>
+                            </div>
                         </div>
-                    </div>
-                </article>
-
-                <article class="feature feature--right">
-                    <div class="feature-visual">
-                        <div class="illustration">
-                            <img src="assets/svg/brand_design.svg" alt="your brand, your way" />
-                        </div>
-                    </div>
-
-                    <div class="feature-content">
-                        <div class="check">✓</div>
-                        <div>
-                            <h3>Your brand, your way</h3>
-                            <p>Add your logo, colors, and business details once. Every invoice looks professional.</p>
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="feature feature--left">
-                    <div class="feature-visual">
-                        <div class="illustration">
-                            <img src="assets/svg/document_sent.svg" alt="send or download instantly" />
-                        </div>
-                    </div>
-
-                    <div class="feature-content">
-                        <div class="check">✓</div>
-                        <div>
-                            <h3>Send or download instantly</h3>
-                            <p>Email the invoice in one click or download a polished PDF. Get paid faster.</p>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </template>
             </div>
         </section>
 
-        <!-- How it Works – 3 Steps -->
+        <!-- ========== How it Works – 3 Steps ========== -->
+         
         <section class="steps" id="how-it-works">
             <header>
                 <h2>How it Works</h2>
                 <p>Three simple steps to get paid faster</p>
             </header>
 
-            <div class="steps-list">
-                <article class="step step--left">
-                    <div class="step-visual">
-                        <div class="illustration">
-                            <img src="assets/svg/user_profile.svg" alt="set up your business profile" />
+            <div class="steps-list" x-data="data">
+                <template x-for="x in howItWorks">
+                    <article class="step" :class="x.id % 2 == 0 ? 'step--right' : 'step--left'">
+                        <div class="step-visual">
+                            <div class="illustration">
+                                <img :src="x.illustration" :alt="x.alt" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Set up your business profile</h3>
-                        <p>Add your details once — logo, address, and payment info. You’re ready to go.</p>
-                    </div>
-                </article>
-
-                <article class="step step--right">
-                    <div class="step-visual">
-                        <div class="illustration">
-                            <img src="assets/svg/add_document.svg" alt="create an invoice" />
+                        <div class="step-number" x-text="x.id"></div>
+                        <div class="step-content">
+                            <h3 x-text="x.title"></h3>
+                            <p x-text="x.subtext"></p>
                         </div>
-                    </div>
-
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Create an invoice</h3>
-                        <p>Add client, items, and amounts. Calculations happen automatically.</p>
-                    </div>
-                </article>
-
-                <article class="step step--left">
-                    <div class="step-visual">
-                        <div class="illustration">
-                            <img src="assets/svg/mail_sent.svg" alt="send or download" />
-                        </div>
-                    </div>
-
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Send or download</h3>
-                        <p>Email it in one click or download the PDF — and get paid.</p>
-                    </div>
-                </article>
+                    </article>
+                </template>
             </div>
         </section>
 
