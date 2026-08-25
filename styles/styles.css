@@ -712,27 +712,3 @@ footer .copyright {
     padding-top: 1.5rem;
     border-top: 1px solid var(--pico-muted-border-color);
 }
-
-@media (max-width: 992px) {
-    .steps .grid {
-        grid-template-columns: 1fr;
-        gap: 1.75rem;
-        max-width: 420px;
-        margin-inline: auto;
-    }
-
-    .steps .grid::before {
-        display: none;
-    }
-
-    .steps article:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -1.1rem;
-        width: 2px;
-        height: 1.1rem;
-        background: var(--connector-color);
-        transform: translateX(-50%);
-    }
-}

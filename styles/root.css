@@ -6,17 +6,3 @@
     --step-size: 2.85rem;
     --connector-color: color-mix(in srgb, var(--pico-primary) 32%, transparent);
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header {
-    font-family: var(--pico-font-family-heading);
-}
