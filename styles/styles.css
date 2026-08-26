@@ -1,4 +1,6 @@
 /* Shared */
+[x-cloak] { display: none !important; }
+
 section {
     padding-block: 4.5rem;
 }
