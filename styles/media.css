@@ -164,6 +164,10 @@
 }
 
 @media (max-width: 480px) {
+    .steps-list::before {
+        display: none;
+    }
+
     footer .footer-grid {
         grid-template-columns: 1fr;
     }
