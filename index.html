@@ -28,19 +28,20 @@
 </head>
 
 <body>
-    <!-- ========== Navigation ========== -->
     <header class="site-header" id="site-header" x-data="{ open: false }">
         <div class="container">
-            <a href="" class="logo">BillGig</a>
+            <a href="#" class="logo">BillGig</a>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" x-on:click="open = ! open">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How it works</a></li>
-                <li><a href="#faq">FAQ</a></li>
+            <ul class="nav-links" x-data="routes">
+                <template x-for="nav in navRoutes">
+                    <li :key="nav.link">
+                        <a :href="nav.link" x-text="nav.text"></a>
+                    </li>
+                </template>
             </ul>
 
             <div class="nav-actions" x-data="auth">
@@ -53,12 +54,12 @@
             x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
             x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
             x-transition:leave-end="opacity-0" x-cloak>
-            <div class="mobile-menu-inner" x-data="auth">
-                <a href="#features" class="nav-link" @click="open = false">Features</a>
-                <a href="#how-it-works" class="nav-link" @click="open = false">How it works</a>
-                <a href="#faq" class="nav-link" @click="open = false">FAQ</a>
+            <div class="mobile-menu-inner" x-data="routes">
+                <template x-for="nav in navRoutes">
+                    <a :href="nav.link" class="nav-link" :key="nav.link" x-text="nav.text" @click="open = false"></a>
+                </template>
 
-                <div class="mobile-actions">
+                <div class="mobile-actions" x-data="auth">
                     <a :href="login" target="_blank" class="btn btn-ghost">Log in</a>
                     <button @click="window.open(signup)">Get started</button>
                 </div>
@@ -66,7 +67,6 @@
         </div>
     </header>
 
-    <!-- ========== Hero section ========== -->
     <main class="container">
         <section class="hero">
             <div>
@@ -78,12 +78,11 @@
                 </p>
                 <div class="actions" x-data="auth">
                     <button @click="window.open(signup)"">Get started</button>
-                    <button class="secondary outline login" @click="window.open(login)">Log in</button>
+                    <button class=" secondary outline login" @click="window.open(login)">Log in</button>
                 </div>
             </div>
         </section>
 
-        <!-- ========== Problem-Solution section ========== -->
         <section class="problem-solution">
             <header>
                 <h2>Problem <span>→</span> Solution</h2>
@@ -114,7 +113,6 @@
             </div>
         </section>
 
-        <!-- ========== Benefits ========== -->
         <section class="benefits">
             <header>
                 <h2>Invoicing that actually works the way you do</h2>
@@ -133,7 +131,6 @@
             </div>
         </section>
 
-        <!-- ========== Features ========== -->
         <section class="feature-list" id="features">
             <header>
                 <h2>Features</h2>
@@ -161,7 +158,6 @@
             </div>
         </section>
 
-        <!-- ========== How it Works – 3 Steps ========== -->
         <section class="steps" id="how-it-works">
             <header>
                 <h2>How it Works</h2>
@@ -187,7 +183,6 @@
             </div>
         </section>
 
-        <!-- ========== CTA Banner ========== -->
         <section class="cta">
             <div class="cta-inner">
                 <h2>Ready to stop wasting time on invoices?</h2>
@@ -199,7 +194,6 @@
             </div>
         </section>
 
-        <!-- ========== FAQ ========== -->
         <section class="faq" id="faq" x-data="data">
             <header>
                 <h2>Frequently asked questions</h2>
@@ -215,8 +209,7 @@
         </section>
     </main>
 
-    <!-- ========== Footer ========== -->
-    <footer class="container">
+    <footer class="container" x-data="data">
         <div class="footer-grid">
             <div>
                 <div class="brand">BillGig</div>
@@ -226,31 +219,18 @@
                 </p>
             </div>
 
-            <div>
-                <h3>Product</h3>
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
+            <template x-for="item in footer">
+                <div :key="item.heading">
+                    <h3 x-text="item.heading"></h3>
+                    <ul>
+                        <template x-for="x in item.content">
+                            <li :key="x.link">
+                                <a :href="x.link" x-text="x.text"></a>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
         </div>
 
         <div class="copyright">

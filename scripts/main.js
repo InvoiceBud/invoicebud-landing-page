@@ -1,6 +1,6 @@
 document.addEventListener("alpine:init", () => {
-  let { benefits, features, faqs, how_it_works } = window.data;
-  let { signup, login } = window.constants;
+  let { benefits, features, faqs, how_it_works, footer } = window.data;
+  let { signup, login, navigation } = window.constants;
 
   /***** Custom Data *****/
   Alpine.data("auth", () => ({
@@ -13,15 +13,10 @@ document.addEventListener("alpine:init", () => {
     features: features,
     howItWorks: how_it_works,
     faqs: faqs,
+    footer: footer
   }));
 
-  /***** Custom Declarative *****/
-  Alpine.directive("handleClick", (el, { expression }, { evaluate }) => {
-    el.addEventListener("click", () => {
-      const url = evaluate(expression);
-      console.log("🚀 ~ url:", url);
-
-      window.open(url);
-    });
-  });
+  Alpine.data("routes", () => ({
+    navRoutes: navigation,
+  }));
 });

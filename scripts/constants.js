@@ -3,15 +3,15 @@ window.constants = {
   login: "https://dash.billgig.app/login",
   navigation: [
     {
-      title: "Features",
+      text: "Features",
       link: "#features",
     },
     {
-      title: "How it works",
+      text: "How it works",
       link: "#how-it-works",
     },
     {
-      title: "FAQ",
+      text: "FAQ",
       link: "#faq",
     },
   ],

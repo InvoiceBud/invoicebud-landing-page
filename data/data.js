@@ -114,4 +114,29 @@ window.data = {
         "We take security seriously. Your data is encrypted in transit and at rest. We never sell or share your business information.",
     },
   ],
+  footer: [
+    {
+      heading: "Product",
+      content: [
+        { text: "Features", link: "#" },
+        { text: "How it works", link: "#" },
+        { text: "FAQ", link: "#" },
+      ],
+    },
+    {
+      heading: "Company",
+      content: [
+        { text: "About", link: "#" },
+        { text: "Blog", link: "#" },
+        { text: "Contact", link: "#" },
+      ],
+    },
+    {
+      heading: "Legal",
+      content: [
+        { text: "Privacy Policy", link: "#" },
+        { text: "Terms of Service", link: "#" },
+      ],
+    },
+  ],
 };
