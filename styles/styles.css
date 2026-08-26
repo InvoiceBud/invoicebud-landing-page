@@ -116,7 +116,7 @@ section>header p {
     cursor: pointer;
     padding: 0;
     font-size: 25px;
-    color: var(--pico-color);
+    color: var(--pico-primary);
 }
 
 .mobile-menu {
