@@ -28,11 +28,13 @@
 
 <body>
     <!-- ===== Navigation ===== -->
-    <header class="site-header" id="site-header">
+    <header class="site-header" id="site-header" x-data="{ open: false }">
         <div class="container">
             <a href="" class="logo">BillGig</a>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" x-on:click="open = ! open">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
@@ -45,10 +47,26 @@
                 <button @click="window.open(signup)">Get started</button>
             </div>
         </div>
+
+        <div class="mobile-menu" x-show="open" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-2" x-cloak>
+            <div class="mobile-menu-inner">
+                <a href="#features" class="nav-link" @click="open = false">Features</a>
+                <a href="#how-it-works" class="nav-link" @click="open = false">How it works</a>
+                <a href="#faq" class="nav-link" @click="open = false">FAQ</a>
+
+                <div class="mobile-actions">
+                    <a href="#login" class="btn btn-ghost">Log in</a>
+                    <button>Get started</button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="container">
-        <!-- Hero section -->
+        <!-- ========== Hero section ========== -->
         <section class="hero">
             <div>
                 <h1>Create professional invoices in minutes, not hours</h1>
@@ -64,14 +82,13 @@
             </div>
         </section>
 
-        <!-- Problem-Solution section -->
+        <!-- ========== Problem-Solution section ========== -->
         <section class="problem-solution">
             <header>
                 <h2>Problem <span>→</span> Solution</h2>
             </header>
 
             <div class="grid">
-                <!-- Problem card -->
                 <article>
                     <header>
                         <strong>The old way</strong>
@@ -83,7 +100,6 @@
                     </p>
                 </article>
 
-                <!-- Solution card -->
                 <article>
                     <header>
                         <strong>With BillGig</strong>
@@ -97,7 +113,7 @@
             </div>
         </section>
 
-        <!-- Benefits  -->
+        <!-- ========== Benefits ========== -->
         <section class="benefits">
             <header>
                 <h2>Invoicing that actually works the way you do</h2>
@@ -117,7 +133,6 @@
         </section>
 
         <!-- ========== Features ========== -->
-
         <section class="feature-list" id="features">
             <header>
                 <h2>Features</h2>
@@ -146,7 +161,6 @@
         </section>
 
         <!-- ========== How it Works – 3 Steps ========== -->
-         
         <section class="steps" id="how-it-works">
             <header>
                 <h2>How it Works</h2>
@@ -172,7 +186,7 @@
             </div>
         </section>
 
-        <!-- CTA Banner -->
+        <!-- ========== CTA Banner ========== -->
         <section class="cta">
             <div class="cta-inner">
                 <h2>Ready to stop wasting time on invoices?</h2>
@@ -184,7 +198,7 @@
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- ========== FAQ ========== -->
         <section class="faq" id="faq" x-data="data">
             <header>
                 <h2>Frequently asked questions</h2>
@@ -200,7 +214,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ========== Footer ========== -->
     <footer class="container">
         <div class="footer-grid">
             <div>

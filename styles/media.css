@@ -23,6 +23,43 @@
 }
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-links,
+    .nav-actions {
+        display: none;
+    }
+
+    .site-header.menu-open .nav-links,
+    .site-header.menu-open .nav-actions {
+        display: flex;
+    }
+
+    .site-header.menu-open .container {
+        flex-wrap: wrap;
+    }
+
+    .site-header.menu-open .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--pico-muted-border-color);
+        margin-top: 0.75rem;
+    }
+
+    .site-header.menu-open .nav-actions {
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
+    }
+
     .features-list {
         gap: 3.5rem;
     }

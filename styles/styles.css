@@ -112,46 +112,81 @@ section>header p {
     display: none;
     background: none;
     border: none;
-    padding: 0.35rem;
     cursor: pointer;
-    font-size: 1.4rem;
-    line-height: 1;
-    opacity: 0.8;
+    padding: 0;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+.mobile-menu {
+    display: none;
+    border-bottom: 1px solid #e2e8f0;
+    overflow: hidden;
+    min-height: 100vh;
+}
 
-    .nav-links,
-    .nav-actions {
-        display: none;
-    }
+.mobile-menu.open {
+    display: block;
+}
 
-    .site-header.menu-open .nav-links,
-    .site-header.menu-open .nav-actions {
-        display: flex;
-    }
+.mobile-menu-inner {
+    padding: 1.25rem 1.25rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
 
-    .site-header.menu-open .container {
-        flex-wrap: wrap;
-    }
+.mobile-menu a.nav-link {
+    display: block;
+    padding: 0.85rem 0.5rem;
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    transition: background 0.15s;
+}
 
-    .site-header.menu-open .nav-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 0.75rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--pico-muted-border-color);
-        margin-top: 0.75rem;
-    }
+.mobile-menu a.nav-link:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+}
 
-    .site-header.menu-open .nav-actions {
-        width: 100%;
-        justify-content: flex-start;
-        padding-bottom: 0.5rem;
-    }
+.mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.mobile-actions .btn {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 1.15rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #475569;
+}
+
+.btn-ghost:hover {
+    color: #f1f5f9;
+    border: 1px solid var(--pico-primary);
 }
 
 /* Hero section  */
