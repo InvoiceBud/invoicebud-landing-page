@@ -14,10 +14,14 @@
         content: "";
         position: absolute;
         left: 50%;
-        bottom: -1.1rem;
+        bottom: -6rem;
         width: 2px;
-        height: 1.1rem;
-        background: var(--connector-color);
+        height: 5rem;
+        background: repeating-linear-gradient(to bottom,
+                var(--connector-color) 0,
+                var(--connector-color) 6px,
+                transparent 6px,
+                transparent 14px);
         transform: translateX(-50%);
     }
 }
