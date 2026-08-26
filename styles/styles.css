@@ -185,8 +185,8 @@ section>header p {
 }
 
 .btn-ghost:hover {
-    color: #f1f5f9;
-    border: 1px solid var(--pico-primary);
+    color: var(--pico-primary);
+    background: #f1f5f9;
 }
 
 /* Hero section  */
