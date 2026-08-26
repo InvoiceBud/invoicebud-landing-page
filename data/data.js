@@ -26,7 +26,7 @@ window.data = {
       id: 1,
       title: "Professional invoices in seconds",
       description: "Creat clean, branded invoices with automatic calculations",
-      illustration: "assets/svg/professional_invoice.svg",
+      illustration: "assets/svg/create_document.svg",
       alt: "professional invoices in seconds",
     },
     {
