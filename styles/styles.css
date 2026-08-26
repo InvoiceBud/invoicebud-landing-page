@@ -1,5 +1,7 @@
 /* Shared */
-[x-cloak] { display: none !important; }
+[x-cloak] {
+    display: none !important;
+}
 
 section {
     padding-block: 4.5rem;
@@ -116,7 +118,18 @@ section>header p {
     cursor: pointer;
     padding: 0;
     font-size: 25px;
+    outline: none;
     color: var(--pico-primary);
+}
+
+.menu-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid var(--pico-primary);
+    outline-offset: 2px;
 }
 
 .mobile-menu {
