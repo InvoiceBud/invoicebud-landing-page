@@ -1,4 +1,5 @@
-/* Shared */
+/* ========== Shared ========== */
+
 [x-cloak] {
     display: none !important;
 }
@@ -24,7 +25,7 @@ section>header p {
     font-size: 1.1rem;
 }
 
-/* ===== Navigation ===== */
+/* ========== Navigation ========== */
 .site-header {
     position: sticky;
     top: 0;
@@ -205,7 +206,7 @@ section>header p {
     background: #f1f5f9;
 }
 
-/* Hero section  */
+/* ========== Hero section ========== */
 .hero {
     min-height: 80vh;
     display: flex;
@@ -232,6 +233,10 @@ section>header p {
     gap: 0.75rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.hero .actions .login {
+    padding: 0 1.5rem;
 }
 
 /* Problem-Solution section */
@@ -283,7 +288,7 @@ section>header p {
     font-size: 1.25rem;
 }
 
-/* Benefit section */
+/* ========== Benefits ========== */
 .benefits .grid {
     gap: 1.25rem;
 }
@@ -594,7 +599,7 @@ section>header p {
     margin-left: auto;
 }
 
-/* CTA Banner */
+/* ========== CTA Banner ========== */
 .cta {
     text-align: center;
     padding-block: 5rem;
@@ -628,7 +633,11 @@ section>header p {
     flex-wrap: wrap;
 }
 
-/* FAQ */
+.cta .actions .login {
+    padding: 0 1.3rem;
+}
+
+/* ========== FAQ ========== */
 .faq {
     max-width: 42rem;
     margin-inline: auto;
@@ -688,7 +697,7 @@ section>header p {
     font-size: 0.98rem;
 }
 
-/* Footer */
+/* ========== Footer ========== */
 footer {
     padding-block: 3.5rem 2.5rem;
     border-top: 1px solid var(--pico-muted-border-color);

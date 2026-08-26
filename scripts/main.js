@@ -1,10 +1,11 @@
 document.addEventListener("alpine:init", () => {
   let { benefits, features, faqs, how_it_works } = window.data;
+  let { signup, login } = window.constants;
 
   /***** Custom Data *****/
   Alpine.data("auth", () => ({
-    signup: "https://dash.billgig.app/signup",
-    login: "https://dash.billgig.app/login",
+    signup: signup,
+    login: login,
   }));
 
   Alpine.data("data", () => ({

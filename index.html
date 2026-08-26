@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="/styles/media.css">
 
     <script src="/data/data.js"></script>
+    <script defer src="/scripts/constants.js"></script>
     <script defer src="/scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/831aea2b42.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.16.2/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <!-- ===== Navigation ===== -->
+    <!-- ========== Navigation ========== -->
     <header class="site-header" id="site-header" x-data="{ open: false }">
         <div class="container">
             <a href="" class="logo">BillGig</a>
@@ -43,7 +44,7 @@
             </ul>
 
             <div class="nav-actions" x-data="auth">
-                <a href="https://dash.billgig.app/login" target="_blank" class="login">Log in</a>
+                <a :href="login" target="_blank" class="login">Log in</a>
                 <button @click="window.open(signup)">Get started</button>
             </div>
         </div>
@@ -58,15 +59,15 @@
                 <a href="#faq" class="nav-link" @click="open = false">FAQ</a>
 
                 <div class="mobile-actions">
-                    <a href="https://dash.billgig.app/login" target="_blank" class="btn btn-ghost">Log in</a>
+                    <a :href="login" target="_blank" class="btn btn-ghost">Log in</a>
                     <button @click="window.open(signup)">Get started</button>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- ========== Hero section ========== -->
     <main class="container">
-        <!-- ========== Hero section ========== -->
         <section class="hero">
             <div>
                 <h1>Create professional invoices in minutes, not hours</h1>
@@ -77,7 +78,7 @@
                 </p>
                 <div class="actions" x-data="auth">
                     <button @click="window.open(signup)"">Get started</button>
-                    <button class=" secondary outline" @click="window.open(login)">Log in</button>
+                    <button class="secondary outline login" @click="window.open(login)">Log in</button>
                 </div>
             </div>
         </section>
@@ -193,7 +194,7 @@
                 <p>Join businesses that create professional invoices the easy way.</p>
                 <div class="actions" x-data="auth">
                     <button @click="window.open(signup)">Get started</button>
-                    <button class="secondary outline" @click="window.open(login)">Log in</button>
+                    <button class="secondary outline login" @click="window.open(login)">Log in</button>
                 </div>
             </div>
         </section>
