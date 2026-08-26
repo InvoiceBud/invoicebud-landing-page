@@ -149,6 +149,7 @@
         display: block;
         order: 1;
         justify-self: center;
+        margin: 0 0 1rem 0;
     }
 
     .step-number {

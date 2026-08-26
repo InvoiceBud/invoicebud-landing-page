@@ -83,7 +83,7 @@ window.data = {
       id: 3,
       title: "Send or download",
       subtext: "Email it in one click or download the PDF — and get paid.",
-      illustration: "assets/svg/mail_sent.svg",
+      illustration: "assets/svg/email.svg",
       alt: "send or download",
     },
   ],
