@@ -89,26 +89,31 @@ window.data = {
   ],
   faqs: [
     {
+      id: 1,
       title: "Is BillGig free to use?",
       subtext:
         "Yes. You can create and send professional invoices at no cost. Optional paid plans unlock advanced branding and higher volume limits if you need them later.",
     },
     {
+      id: 2,
       title: "Can I add my logo and brand colors?",
       subtext:
         "Absolutely. Upload your logo and set your brand colors once — every invoice will automatically look consistent and professional.",
     },
     {
+      id: 3,
       title: "How do I send invoices to clients?",
       subtext:
         "You can email the invoice directly from BillGig with one click, or download a clean PDF and send it yourself.",
     },
     {
+      id: 4,
       title: "Can I track which invoices are paid?",
       subtext:
         "Yes. Mark invoices as paid, pending, or overdue and see the status of everything at a glance from your dashboard.",
     },
     {
+      id: 5,
       title: "Is my data secure?",
       subtext:
         "We take security seriously. Your data is encrypted in transit and at rest. We never sell or share your business information.",

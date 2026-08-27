@@ -13,7 +13,9 @@ document.addEventListener("alpine:init", () => {
     features: features,
     howItWorks: how_it_works,
     faqs: faqs,
-    footer: footer
+    footer: footer,
+
+    openFaq: null,
   }));
 
   Alpine.data("routes", () => ({

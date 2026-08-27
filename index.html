@@ -212,7 +212,8 @@
             </header>
 
             <template x-for="x in faqs">
-                <details>
+                <details :key="x.id" :open="openFaq === x.id" @click.prevent="openFaq = openFaq === x.id ? null : x.id"
+                    x-transition>
                     <summary x-text="x.title"></summary>
                     <p x-html="x.subtext"></p>
                 </details>
