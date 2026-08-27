@@ -16,8 +16,12 @@
     <meta property="og:url" content="https://www.billgig.app">
     <meta property="og:title" content="BillGig">
     <meta property="og:description" content="Create invoice simple & elegant for freelancer">
-    <!-- <meta property="og:image" content="https://www.yourdomain.com/images/og-image.jpg"> -->
+    <meta property="og:image" content="https://www.assets.billgig.app/brand.png">
     <meta property="og:site_name" content="BillGig">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +45,9 @@
 <body>
     <header class="site-header" id="site-header" x-data="{ open: false }">
         <div class="container">
-            <a href="#" class="logo">BillGig</a>
+            <a href="#" class="logo">
+                <img src="https://assets.billgig.app/brand.png" alt="brand logo" />
+            </a>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" x-on:click="open = ! open">
                 <i class="fa-solid fa-bars"></i>

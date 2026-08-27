@@ -44,11 +44,18 @@ section>header p {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.25rem;
-    letter-spacing: -0.02em;
-    text-decoration: none;
-    color: inherit;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    max-height: 50px;
+}
+
+.logo img {
+    display: block;
+    width: 80px;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
 }
 
 .logo:hover {
