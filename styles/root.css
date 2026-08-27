@@ -4,6 +4,6 @@
     --pico-font-family-heading: "Plus Jakarta Sans", sans-serif;
     --pico-font-weight: 400;
     --step-size: 2.85rem;
-    --connector-color: color-mix(in srgb, var(--pico-primary) 32%, transparent);
+    --connector-color: color-mix(in srgb, var(--pico-primary-background) 32%, transparent);
     --pico-primary: ##5d6b89 !important;
 }
