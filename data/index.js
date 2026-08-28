@@ -26,7 +26,7 @@ window.data = {
       id: 1,
       title: "Professional invoices in seconds",
       description: "Creat clean, branded invoices with automatic calculations",
-      illustration: "public/svg/create_document.svg",
+      illustration: "assets/svg/create_document.svg",
       alt: "professional invoices in seconds",
     },
     {
@@ -34,7 +34,7 @@ window.data = {
       title: "Client management",
       description:
         "Add and manage clients with their contact details, so you never have to re-enter information.",
-      illustration: "public/svg/team_management.svg",
+      illustration: "assets/svg/team_management.svg",
       alt: "client management",
     },
     {
@@ -42,7 +42,7 @@ window.data = {
       title: "Your brand, your way",
       description:
         "Add your logo and business details once. Every invoice looks professional.",
-      illustration: "public/svg/brand_design.svg",
+      illustration: "assets/svg/brand_design.svg",
       alt: "your brand, your way",
     },
     {
@@ -50,7 +50,7 @@ window.data = {
       title: "Payment status tracking",
       description:
         "Know exactly which invoices are paid and which ones still need follow-up",
-      illustration: "public/svg/progress_tracking.svg",
+      illustration: "assets/svg/progress_tracking.svg",
       alt: "payment status tracking",
     },
     {
@@ -58,7 +58,7 @@ window.data = {
       title: "Send or download instantly",
       description:
         "Email the invoice in one click or download a polished PDF. Get paid faster.",
-      illustration: "public/svg/document_sent.svg",
+      illustration: "assets/svg/document_sent.svg",
       alt: "send or download instantly",
     },
   ],
@@ -68,7 +68,7 @@ window.data = {
       title: "Set up your business profile",
       subtext:
         "Add your details once — logo, address, and payment info. You&apos;re ready to go.",
-      illustration: "public/svg/user_profile.svg",
+      illustration: "assets/svg/user_profile.svg",
       alt: "set up your business profile",
     },
     {
@@ -76,14 +76,14 @@ window.data = {
       title: "Create an invoice",
       subtext:
         "Add client, items, and amounts. Calculations happen automatically.",
-      illustration: "public/svg/add_document.svg",
+      illustration: "assets/svg/add_document.svg",
       alt: "create an invoice",
     },
     {
       id: 3,
       title: "Send or download",
       subtext: "Email it in one click or download the PDF — and get paid.",
-      illustration: "public/svg/email.svg",
+      illustration: "assets/svg/email.svg",
       alt: "send or download",
     },
   ],
