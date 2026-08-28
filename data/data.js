@@ -123,9 +123,9 @@ window.data = {
     {
       heading: "Product",
       content: [
-        { text: "Features", link: "#" },
-        { text: "How it works", link: "#" },
-        { text: "FAQ", link: "#" },
+        { text: "Features", link: "#features" },
+        { text: "How it works", link: "#how-it-works" },
+        { text: "FAQ", link: "#faq" },
       ],
     },
     {
